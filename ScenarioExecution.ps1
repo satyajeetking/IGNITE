@@ -95,7 +95,7 @@ ForEach ($group in $objectResponseScenarioGroupData){
 }
 
 if ( $groupExists -eq 'True' ){
-	Write-Host "Group name found in the list, starting the execution"
+	Write-Host "Group name found in the list, starting the execution of group : $($ScenarioGroupName)"
 }else{
 	throw "Unable to find the group name in IQP"
 }
