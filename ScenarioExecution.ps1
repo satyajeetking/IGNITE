@@ -26,11 +26,11 @@ $wso2_server_ip = 'ignite-wso-ignite-prod.mig-cluster-01-7e2996fc95fd6eb4a4c7a63
 $igniteplatform_server_ip = 'ignite-platform-ignite-prod.mig-cluster-01-7e2996fc95fd6eb4a4c7a63aa3e73699-0000.us-south.containers.appdomain.cloud'
 $otfa_server_ip = 'otfa-ignite-prod.mig-cluster-01-7e2996fc95fd6eb4a4c7a63aa3e73699-0000.us-south.containers.appdomain.cloud'
 
-$applicationName = $env:APPLICATION_NAME
-$WebEnv = $env:WEB_ENVIRONMENT
-$ScenarioGroupName = $env:SCENARIO_GROUP_NAME
-$Mode = $env:MODE
-$Browser = $env:CHOICE_OF_BROWSER
+$applicationName = $args[0]
+$WebEnv = $args[1]
+$ScenarioGroupName = $args[2]
+$Mode = $args[3]
+$Browser = $args[4]
 
 $AUTH_URL = "https://$($wso2_server_ip)/oauth2/token"
 
